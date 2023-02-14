@@ -16,5 +16,3 @@ require('bufferline-config')
 
 -- colourscheme
 vim.cmd('colorscheme nord')
-
-
