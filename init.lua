@@ -15,4 +15,4 @@ require('treesitter-config')
 require('bufferline-config')
 
 -- colourscheme
-vim.cmd('colorscheme nord')
+vim.cmd('colorscheme catppuccin-mocha')

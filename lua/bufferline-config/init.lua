@@ -1,10 +1,18 @@
 --[[ cr0ws config ]]--
-    
-require("bufferline").setup({ 
+
+require("bufferline").setup({
     highlights = {
       fill = {
-        bg = "#2E3440",
+        bg = "#1E1E2E",
       },
+    },
+    options = {
+        indicator_icon = " ",
+        diagnostics = "nvim_lsp",
+        diagnostics_indicator = function(count, level)
+            local icon = level:match("error") and "" or ""
+            return icon
+        end,
     },
 })
 

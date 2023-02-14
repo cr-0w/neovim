@@ -26,7 +26,7 @@ return require('packer').startup(function(use)
         require('gitsigns').setup{current_line_blame = true}
     end
     }
-
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
     use {'nvim-tree/nvim-tree.lua', requires = {'nvim-tree/nvim-web-devicons'}}
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}

@@ -1,3 +1,3 @@
 require('lualine').setup({
-  options = {theme = 'nord'}
+  options = {theme = 'horizon'}
 })

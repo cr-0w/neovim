@@ -1,7 +1,52 @@
 --[[ cr0ws config ]]--
 
-vim.g.nvim_tree_width = 25
-vim.g.nvim_auto_open = 1
-vim.g.nvim_indent_markers = 1
-require 'nvim-tree'.setup {}
+vim.opt.termguicolors = true
+--vim.g.nvim_tree_width = 25
+--vim.g.nvim_auto_open = 1
+--vim.g.nvim_indent_markers = 1
+
+require 'nvim-tree'.setup({
+    auto_reload_on_write = true,
+    view = {
+        width = 30,
+    },
+
+    renderer = {
+        indent_width = 2,
+        indent_markers = {
+          enable = true,
+          inline_arrows = true,
+
+    float = {
+        border = "rounded",
+        },
+
+        glyphs = {
+            default = "",
+            symlink = "",
+            bookmark = "",
+            modified = "●",
+            folder = {
+              arrow_closed = "",
+              arrow_open = "",
+              default = "",
+              open = "",
+              empty = "",
+              empty_open = "",
+              symlink = "",
+              symlink_open = "",
+            },
+            git = {
+              unstaged = "✗",
+              staged = "✓",
+              unmerged = "",
+              renamed = "➜",
+              untracked = "★",
+              deleted = "",
+              ignored = "◌",
+            },
+        },
+     },
+   },
+})
 
